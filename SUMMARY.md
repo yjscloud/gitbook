@@ -1,7 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
-* [我来自斯堪的纳维亚](wo-lai-zi-si-kan-de-na-wei-ya.md)
+* [我来自斯堪的纳维亚](README.md)
 * [一、学习方法论](yi-xue-xi-fang-fa-lun.md)
 * [二、运维技能图谱](er-yun-wei-ji-neng-tu-pu.md)
 * [三、运维常用技能](san-yun-wei-chang-yong-ji-neng.md)
