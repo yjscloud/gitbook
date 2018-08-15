@@ -1,2 +1,79 @@
 # 7.1 Zabbix（运维监控）
 
+## 一、Zabbix简介
+
+Zabbix是基于Web界面的分布式系统监控的企业级开源软件。可以监控各种系统与设备，网络参数，保证服务器设备安全运营；提供灵活的通知机制。
+
+### （1）Zabbix功能
+
+CPU负荷、内存使用、磁盘使用、网络状况、端口监视、日志监控。
+
+Zabbix逻辑图：
+
+ ![7-2](http://pded8ke3e.bkt.clouddn.com/7-2.png)
+
+### （2）Zabbix server
+
+1、Zabbix server是整个Zabbix软件的核心程序。
+
+2、Server通过轮询和捕获数据，计算是否满足触发器条件，向用户发送通知。它是Zabbix监控代理和Proxy代理报告系统可用性和完整性数据的核心组件。Server自身可以通过简单服务远程检查网络服务\(如Web服务器和邮件服务\)。
+
+3、Sever是一个包含了被存储了所有配置，统计方面的和可操作数据的中央仓库,它是监控系统问题升级以至于激活警告管理器的Zabbix中的实体。
+
+4、基本的Zabbix服务器起作用分三个不同的组件;他们是:Zabbix服务器，Web前端和数据库存储。
+
+5、Zabbix的所有配置信息都存储在服务器和Web前端进行交互的数据库中。Zabbix的所有配置信息都存储在服务器和Web前端进行交互的数据库中。例如，当你通过Web前端（或者API）新增一个条目时，它会被添加到数据库的item表里。然后，Zabbix服务器以每分钟一次的频率查询item表中的活动列表，接着将它存储在Zabbix服务器中的缓存里。这就是为什么Zabbix前端所做的任何更改最多需要花费两分钟才能显示在最新的数据段的原因。
+
+### （3）Zabbix agent
+
+Zabbix agents可以执行被动（passive）和主动（active）两种检查方式。
+
+1、在passive check 模式中agent应答数据请求，Zabbix server（或者proxy）询问agent数据,如CPU 的负载情况，然后Zabbix agent回送结果。
+
+2、Active checks 处理过程将相对复杂。 Agent必须首先从Zabbix sever索取监控项列表以进行独立处理，然后周期性地发送新的值给server。
+
+3、执行被动或主动检查是通过选择相应的监测项目类型来配置的。item type. Zabbix agent处理监控项类型有’Zabbix agent’和’Zabbix agent \(active\)’。
+
+### （4）Zabbix支持的平台
+
+由于安全要求和服务器关键任务的操作, UNIX系统是唯一能够提供必要性能,容错和恢复能力的操作系统. Zabbix运转也是市场领先版本. Zabbix server支持以下平台: Linux Solaris AIX HP-UX Mac OS X FreeBSD OpenBSD NetBSD SCO Open Server Tru64/OSF1 Zabbix agent支持以下平台： Linux IBM AIX FreeBSD NetBSD OpenBSD HP-UX Mac OS X Solaris: 9, 10, 11 Windows: 支持2000后所有桌面和服务器版。
+
+## 二、Zabbix 概述
+
+### （1）组件概述
+
+* Zabbix Server：负责接收agent发送的报告信息的核心组件，所有配置、统计数据及操作数据均由其组织进行。
+* Database Storage：专用于存储所有配置信息，以及由Zabbix收集的数据。
+* Web interface：Zabbix的GUI接口，通常与Server运行在同一台主机上。
+* Proxy：可选组件，常用于分布式监控环境中，代理Server收集部分被监控端的监控数据并统一发往server端。
+* Agent：部署在被监控主机上，负责收集本地数据并发往Server端或Proxy端。
+
+### （2）Zabbix web接口概览
+
+* Monitoring：与“监控”功能相关的页面大多都在此处，如graphs、triggers、screens及maps等。
+* Inventory：主机资产清单。
+* Reports：提供强大且直观报告功能。
+* Configuration：监控系统的所有配置功能均位于此处，例如定义主机组、模板、主机等。
+* Administration：与Zabbix自身相关功能，如认证方法、用户、权限、脚本、媒介类型（media type）、审计、通知及全局配置等。
+
+### （3）Zabbix常用术语
+
+* 主机（host）：要监控的网络设备，可由IP或DNS名称指定；
+* 主机组（host group）：主机的逻辑容器，可以包含主机和模板，但同一个组内的主机和模板不能互相链接；主机组通常在给用户或用户组指派监控权限时使用。
+* 监控项（item）：一个特定监控指标的相关的数据，这写些数据来自于被监控对象；item是zabbix进行数据收集的核心，没有item，将没有数据；相对某监控对象来说，每个item都由“key”进行标示。
+* 触发器（trigger）：一个表达式，用于评估某监控对象的某特定item内所接收到的数据是否在合理范围内，即阀值；接收到的数据量大于阀值时，触发器状态将从“ok”转变为“problem”，当数据量再次回归到合理范围时，其状态将从“problem”转换回“ok”。
+* 事件（event）：即发生的一个值得关注的事情，例如触发器的状态转变，新的agent或重新上线的agent的自动注册等。
+* 动作（action）：指定与特定事件事先定义的处理方法，通过包含操作（如发送通知）和条件（何时执行操作）。
+* 报警升级（escalation）：发送报警或执行远程命令的自定义方案，如每隔5分钟发送一次报，共发送5次等
+* 媒介（media）：发送通知的手段或通道，如email，jabber或sms等。
+* 通知（notification）：通过选定的媒介向用户发送的有关某事件的信息。
+* 远程命令（remote command）：预定义的命令，可在被监控主机处于某特定条件下时自动执行。
+* 模板（template）：用于快速定义被监控主机的预设条目集合，通常包含了item、trigger、graph、srceen、application以及low-level discovery rule；模板可以直接链接至单个主机。
+* 应用（application）：一组item的集合
+* web场景（web scennario）：用于检测web站点可用性的一个或多个http请求。
+* 前端（frontend）：Zabbix的web接口。
+
+### （4）Zabbix的逻辑架构
+
+![7-3](http://pded8ke3e.bkt.clouddn.com/7-3.png)
+
