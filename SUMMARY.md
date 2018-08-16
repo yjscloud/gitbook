@@ -1,6 +1,6 @@
 # Table of contents
 
-* [我来自斯堪的纳维亚](README.md)
+* [献给我的朋友们](README.md)
 * [一、个人对学习的看法](yi-xue-xi-fang-fa-lun.md)
 * [二、运维技能图谱](er-yun-wei-ji-neng-tu-pu.md)
 * [三、运维常用技能](san-yun-wei-chang-yong-ji-neng/README.md)
@@ -11,7 +11,8 @@
   * [3.5 Memache（分布式缓存）](san-yun-wei-chang-yong-ji-neng/3.5-memache-fen-bu-shi-huan-cun.md)
   * [3.6 Zookeeper（分布式协调系统）](san-yun-wei-chang-yong-ji-neng/3.6-zookeeper-fen-bu-shi-xie-tiao-xi-tong.md)
   * [3.7 KVM（开源虚拟化）](san-yun-wei-chang-yong-ji-neng/3.7-kvm-kai-yuan-xu-ni-hua.md)
-  * [3.8 GitLab（版本控制）](san-yun-wei-chang-yong-ji-neng/3.8-gitlab-ban-ben-kong-zhi.md)
+  * [3.8 GitLab（版本控制）](san-yun-wei-chang-yong-ji-neng/3.8-gitlab-ban-ben-kong-zhi/README.md)
+    * [3.8.1 GitLab安装与汉化](san-yun-wei-chang-yong-ji-neng/3.8-gitlab-ban-ben-kong-zhi/3.8.1-gitlab-an-zhuang-yu-han-hua.md)
   * [3.9 Jenkins（运维自动化）](san-yun-wei-chang-yong-ji-neng/3.9-jenkins-yun-wei-zi-dong-hua.md)
   * [3.10 WAF（Web防火墙）](san-yun-wei-chang-yong-ji-neng/3.10-wafweb-fang-huo-qiang.md)
 * [四、常用数据库](si-chang-yong-shu-ju-ku/README.md)
@@ -31,6 +32,9 @@
     * [7.1.1 Zabbix服务的部署](qi-yun-wei-shen-ji-fen-xi/7.1-zabbix-yun-wei-jian-kong/7.1.1-zabbix-fu-wu-de-bu-shu/README.md)
       * [1. Zabbix服务端部署](qi-yun-wei-shen-ji-fen-xi/7.1-zabbix-yun-wei-jian-kong/7.1.1-zabbix-fu-wu-de-bu-shu/1.-zabbix-fu-wu-duan-bu-shu.md)
       * [2. Zabbix客服端部署](qi-yun-wei-shen-ji-fen-xi/7.1-zabbix-yun-wei-jian-kong/7.1.1-zabbix-fu-wu-de-bu-shu/2.-zabbix-ke-fu-duan-bu-shu-1.md)
+      * [3. 配置前端展示](qi-yun-wei-shen-ji-fen-xi/7.1-zabbix-yun-wei-jian-kong/7.1.1-zabbix-fu-wu-de-bu-shu/3.-pei-zhi-qian-duan-zhan-shi.md)
+    * [7.1.2 Zabbix监控服务](qi-yun-wei-shen-ji-fen-xi/7.1-zabbix-yun-wei-jian-kong/7.1.2-zabbix-jian-kong-fu-wu/README.md)
+      * [1. 自定义Nginx监控](qi-yun-wei-shen-ji-fen-xi/7.1-zabbix-yun-wei-jian-kong/7.1.2-zabbix-jian-kong-fu-wu/1.-zi-ding-yi-nginx-jian-kong.md)
 * [八、运维云平台](ba-yun-wei-yun-ping-tai/README.md)
   * [8.1 OpenStack（开源云操作系统）](ba-yun-wei-yun-ping-tai/8.1-openstack-kai-yuan-yun-cao-zuo-xi-tong.md)
   * [8.2 Tstack（腾讯云平台）](ba-yun-wei-yun-ping-tai/8.2-tstack-teng-xun-yun-ping-tai.md)

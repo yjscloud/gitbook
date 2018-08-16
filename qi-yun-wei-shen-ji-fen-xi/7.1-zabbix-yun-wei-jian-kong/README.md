@@ -10,7 +10,9 @@ CPU负荷、内存使用、磁盘使用、网络状况、端口监视、日志�
 
 Zabbix逻辑图：
 
- ![7-2](http://pded8ke3e.bkt.clouddn.com/7-2.png)
+ 
+
+![7-2](http://pded8ke3e.bkt.clouddn.com/7-2.png)
 
 ### （2）Zabbix server
 
