@@ -35,6 +35,8 @@
       * [3. 配置前端展示](qi-yun-wei-shen-ji-fen-xi/7.1-zabbix-yun-wei-jian-kong/7.1.1-zabbix-fu-wu-de-bu-shu/3.-pei-zhi-qian-duan-zhan-shi.md)
     * [7.1.2 Zabbix监控服务](qi-yun-wei-shen-ji-fen-xi/7.1-zabbix-yun-wei-jian-kong/7.1.2-zabbix-jian-kong-fu-wu/README.md)
       * [1. 自定义Nginx监控](qi-yun-wei-shen-ji-fen-xi/7.1-zabbix-yun-wei-jian-kong/7.1.2-zabbix-jian-kong-fu-wu/1.-zi-ding-yi-nginx-jian-kong.md)
+  * [7.2 云镜（安全监控）](qi-yun-wei-shen-ji-fen-xi/7.2-yun-jing-an-quan-jian-kong.md)
+  * [7.3 ELK（日志收集展示）](qi-yun-wei-shen-ji-fen-xi/7.3-elk-ri-zhi-shou-ji-zhan-shi.md)
 * [八、运维云平台](ba-yun-wei-yun-ping-tai/README.md)
   * [8.1 OpenStack（开源云操作系统）](ba-yun-wei-yun-ping-tai/8.1-openstack-kai-yuan-yun-cao-zuo-xi-tong.md)
   * [8.2 Tstack（腾讯云平台）](ba-yun-wei-yun-ping-tai/8.2-tstack-teng-xun-yun-ping-tai.md)
