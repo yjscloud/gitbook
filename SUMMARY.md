@@ -5,7 +5,7 @@
 * [二、运维技能图谱](er-yun-wei-ji-neng-tu-pu.md)
 * [三、运维常用技能](san-yun-wei-chang-yong-ji-neng/README.md)
   * [3.1 Vim（最好用的编辑器）](san-yun-wei-chang-yong-ji-neng/3.1-vim-zui-hao-yong-de-bian-ji-qi.md)
-  * [3.2 Apache & Nginx（Web服务）](san-yun-wei-chang-yong-ji-neng/3.2-apache-nginxweb-fu-wu/README.md)
+  * [3.2 3.2 Nginx & Tengine（Web服务）](san-yun-wei-chang-yong-ji-neng/3.2-apache-nginxweb-fu-wu/README.md)
     * [1. Nginx介绍和部署](san-yun-wei-chang-yong-ji-neng/3.2-apache-nginxweb-fu-wu/1.-nginx-jie-shao-he-bu-shu.md)
     * [2. Nginx配置解析](san-yun-wei-chang-yong-ji-neng/3.2-apache-nginxweb-fu-wu/2.-nginx-pei-zhi-jie-xi.md)
   * [3.3 Tomcat（Web中间件）](san-yun-wei-chang-yong-ji-neng/3.3-tomcatweb-zhong-jian-jian.md)
