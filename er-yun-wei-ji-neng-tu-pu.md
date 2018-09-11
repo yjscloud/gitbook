@@ -1,10 +1,6 @@
----
-description: '111'
----
-
 # 二、运维技能图谱
 
-\[架构测试图片\]
+**运维知识图谱。。。。可怕。。。慢慢的点灯吧~~~**  
 
- ![ces](http://ow78pfxd9.bkt.clouddn.com/k-2.png)
+![&#x8FD0;&#x7EF4;&#x77E5;&#x8BC6;](http://pded8ke3e.bkt.clouddn.com/运维知识.png)
 
